@@ -1,0 +1,20 @@
+document.addEventListener("DOMContentLoaded",()=>{
+  buildHeader();
+  renderHero();
+  renderCategories();
+  renderTape();
+  renderProducts();
+  renderProductRows();
+  renderBlocks();
+  buildFooter();
+  buildDock();
+  initShots();
+  Saved.init();
+  initBot();
+  initReveal();
+  initSwirl();
+  renderSwatch();
+  initColorNav();
+  initLightbox();
+  bindPageButtons();
+});
