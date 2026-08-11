@@ -1,6 +1,14 @@
 window.MS = {
   brand:{name:"MEDSTYLE",tagline:"Beyond A Blouse & Scrubs",phone:"094 466 2720",phoneRaw:"0944662720",contactName:"Trà My",address:"Tầng 2, Toà nhà ChiHaiDuc, 23 Nguyễn Bá Lân, P. Mỹ An, Q. Ngũ Hành Sơn, TP. Đà Nẵng",hours:"8:00 – 20:00, cả tuần",email:"medstyle.vn@gmail.com",domain:"medstyle.vn"},
-  links:{messengerBase:"https://m.me/108718661560937?ref=",cartApi:"",facebook:"",shopee:"",tiktok:"",zalo:"",mapsEmbed:"",lookbookVideo:""},
+  links:{
+    messengerBase:"https://m.me/108718661560937?ref=",
+    cartApi:"",
+    facebook:"",
+    // shopee:"",
+    tiktok:"",
+    zalo:"",
+    mapsEmbed:"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15337.173740637656!2d108.2496147!3d16.0502557!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314217001192f53d%3A0xe8e46ea50fccddb1!2sBlouse%20%26%20Scrubs%20MedStyle!5e0!3m2!1svi!2s!4v1786434071162!5m2!1svi!2s",
+    lookbookVideo:""},
   stats:[
     {to:10000,suffix:"+",label:"sản phẩm đã đến tay nhân viên y tế"},
     {to:3,suffix:"",label:"năm đồng hành cùng ngành y"},
@@ -91,7 +99,7 @@ window.MS = {
     {key:"ktv",label:"Kỹ thuật viên",sub:"Dáng chuẩn ngành xét nghiệm",img:"cat-ktv.jpg"},
     {key:"scrubs",label:"Scrubs",sub:"Hơn 200 màu",img:"cat-scrubs.jpg"}
   ],
-  fallbackImg:"default-product.jpg",
+  // fallbackImg:"default-product.jpg",
   products:[
     {
       id:"blouse-mscool",
