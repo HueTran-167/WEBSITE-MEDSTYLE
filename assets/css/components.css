@@ -43,3 +43,36 @@
 .bot__quick{display:flex;flex-wrap:wrap;gap:6px;padding:0 18px 12px;background:var(--paper)}.bot__quick button{background:#fff;border:1px solid var(--line);color:var(--navy);padding:8px 13px;border-radius:100px;font:600 12px/1 var(--body)}.bot__form{display:flex;gap:8px;padding:12px;border-top:1px solid var(--line);background:#fff}.bot__form input{flex:1;border:1px solid var(--line);border-radius:100px;padding:11px 16px;background:var(--paper)}.bot__form button{width:40px;height:40px;border-radius:50%;border:0;background:var(--navy);color:#fff;display:grid;place-items:center}.bot__note{padding:0 18px 12px;font-size:10.5px;color:var(--ink-soft);background:var(--paper)}
 .save-tab{position:fixed;right:0;top:50%;transform:translateY(-50%);z-index:78;background:var(--navy);color:#fff;border:0;padding:18px 11px;border-radius:14px 0 0 14px;display:flex;flex-direction:column;align-items:center;gap:9px;box-shadow:-4px 0 22px #1b479733}.save-tab svg{width:19px;height:19px}.save-tab span{writing-mode:vertical-rl;font:700 10.5px/1 var(--body);letter-spacing:.16em;text-transform:uppercase}.save-tab i{font-style:normal;min-width:21px;height:21px;border-radius:50%;background:var(--sale);display:grid;place-items:center;font:800 11px/1 var(--display)}.save-tab[hidden]{display:none}.save-panel{position:fixed;right:0;top:0;bottom:0;z-index:90;width:min(360px,92vw);background:var(--paper);box-shadow:-14px 0 50px #1b479733;transform:translateX(101%);transition:transform .4s var(--ease);display:flex;flex-direction:column}.save-panel.is-open{transform:none}.save-panel__top{background:var(--navy);color:#fff;padding:18px 20px;display:flex;align-items:center;gap:12px}.save-panel__top b{font:800 15px/1.2 var(--display)}.save-panel__x{margin-left:auto;background:none;border:0;color:#fff;font-size:24px}.save-panel__list{flex:1;overflow-y:auto;padding:14px}.save-panel__foot{padding:14px;border-top:1px solid var(--line);background:#fff}.save-panel__foot .btn{width:100%;justify-content:center}.sv{display:grid;grid-template-columns:58px 1fr auto auto;gap:10px;align-items:center;background:#fff;border-radius:var(--r-s);padding:10px;margin-bottom:9px}.sv .ph{border-radius:7px}.sv .ph::before{font-size:15px}.sv .ph::after{display:none}.sv b{display:block;font:800 13px/1.25 var(--display)}.sv u{display:block;text-decoration:none;margin-top:4px;font:800 13px/1 var(--display);color:var(--navy)}.sv__qty{display:flex;align-items:center;gap:8px}.sv__qty button{width:24px;height:24px;border-radius:50%;border:1px solid var(--line);background:#fff;color:var(--navy)}.sv__x{background:none;border:0;color:#A09496;font-size:19px}.save-empty{text-align:center;padding:44px 20px;color:var(--ink-soft);font-size:13.5px}.scrim{position:fixed;inset:0;z-index:89;background:#0B255966;opacity:0;visibility:hidden;transition:.35s}.scrim.is-on{opacity:1;visibility:visible}
 .lightbox{position:fixed;inset:0;z-index:95;display:grid;place-items:center;padding:5vh 5vw;background:#0B255966;opacity:0;visibility:hidden;transition:.3s}.lightbox.is-on{opacity:1;visibility:visible}.lightbox img{max-width:min(90vw,620px);max-height:88vh;border-radius:var(--r);box-shadow:0 30px 70px #00000059}.lightbox__x{position:fixed;top:20px;right:20px;width:44px;height:44px;border-radius:50%;border:0;background:#ffffffe6;font-size:22px}
+/* ============================================================
+   MOBILE — ẨN PLACEHOLDER TÊN FILE KHI ẢNH ĐANG LOAD
+   Giữ nền trơn cùng màu website thay vì hiện tên file / chữ MS
+   ============================================================ */
+
+@media (max-width:960px){
+
+  /* Nền chờ ảnh giống nền website */
+  .shots,
+  .shots__f,
+  .shots .ph{
+    background:var(--paper) !important;
+  }
+
+  /* Bỏ khung nét đứt khi ảnh chưa kịp tải */
+  .shots .ph{
+    outline:none !important;
+    box-shadow:none !important;
+  }
+
+  /* Bỏ chữ MS ở giữa placeholder */
+  .shots .ph::before{
+    display:none !important;
+    content:none !important;
+  }
+
+  /* Bỏ hoàn toàn dòng tên file:
+     SP-BLOUSE-....JPG · 900×1200 */
+  .shots .ph::after{
+    display:none !important;
+    content:none !important;
+  }
+}
