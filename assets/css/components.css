@@ -76,3 +76,9 @@
     content:none !important;
   }
 }
+/* Placeholder ảnh sản phẩm: chỉ hiện nền trơn */
+.shots .ph{
+  background:var(--paper) !important;
+  outline:none !important;
+  box-shadow:none !important;
+}
