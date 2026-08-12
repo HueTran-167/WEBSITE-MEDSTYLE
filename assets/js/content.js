@@ -19,7 +19,7 @@ window.MS = {
     home:[
       {
         img:"banner-home-00.jpg",
-        imgMobile:"banner-home-00-mobile.jpg",
+        imgMobile:"banner-home-00.jpg",
         eyebrow:"Đồng phục y tế · Đà Nẵng",
         title:"Đồng hành cùng",
         script:"nhân viên y tế",
@@ -28,7 +28,7 @@ window.MS = {
       },
       {
         img:"banner-home-01.jpg",
-        imgMobile:"banner-home-01-mobile.jpg",
+        imgMobile:"banner-home-01.jpg",
         eyebrow:"Bộ sưu tập mới",
         title:"Blouse",
         script:"Plus",
@@ -37,7 +37,7 @@ window.MS = {
       },
       {
         img:"banner-home-02.jpg",
-        imgMobile:"banner-home-02-mobile.jpg",
+        imgMobile:"banner-home-02.jpg",
         eyebrow:"Chất liệu",
         title:"Cần gì",
         script:"phải ủi",
@@ -46,7 +46,7 @@ window.MS = {
       },
       {
         img:"banner-home-03.jpg",
-        imgMobile:"banner-home-03-mobile.jpg",
+        imgMobile:"banner-home-03.jpg",
         eyebrow:"Scrubs MsCool",
         title:"Hơn",
         script:"200 màu",
@@ -57,7 +57,7 @@ window.MS = {
     products:[
       {
         img:"banner-products-01.jpg",
-        imgMobile:"banner-products-01-mobile.jpg",
+        imgMobile:"banner-products-01.jpg",
         eyebrow:"Tám dáng áo",title:"Chọn theo",
         script:"nghề của bạn",
         sub:"Blouse mỗi ngành một dáng khác nhau, không phải cùng một chiếc thu nhỏ lại.",
@@ -65,7 +65,7 @@ window.MS = {
       },
       {
         img:"banner-products-02.jpg",
-        imgMobile:"banner-products-02-mobile.jpg",
+        imgMobile:"banner-products-02.jpg",
         eyebrow:"Xưởng custom",
         title:"Chiếc áo",
         script:"mang tên bạn",
@@ -75,7 +75,7 @@ window.MS = {
     ],
     about:[{
       img:"banner-about-01.jpg",
-      imgMobile:"banner-about-01-mobile.jpg",
+      imgMobile:"banner-about-01.jpg",
       eyebrow:"Từ 2023",
       title:"Beyond",
       script:"a blouse",
@@ -84,7 +84,7 @@ window.MS = {
     }],
     b2b:[{
       img:"banner-b2b-01.jpg",
-      imgMobile:"banner-b2b-01-mobile.jpg",
+      imgMobile:"banner-b2b-01.jpg",
       eyebrow:"Đồng phục số lượng",
       title:"Bệnh viện",
       script:"& phòng khám",

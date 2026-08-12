@@ -26,9 +26,40 @@ window.phFig = function(file,label,ar,cls){
   return `<figure class="ph ${cls || ""}"${style} data-label="${label || file}"><img src="assets/img/${file}" alt="" loading="lazy" onerror="${fallback}"></figure>`;
 };
 window.heroFig = function(b){
-  const fallback = MS.fallbackImg ? `this.onerror=null;this.src='assets/img/${MS.fallbackImg}'` : "this.style.display='none'";
+  const desktop = b.img;
   const mobile = b.imgMobile || b.img;
-  return `<figure class="ph ph--hero" data-label="${b.img} · ảnh nền desktop"><img class="hero-img-desktop" src="assets/img/${b.img}" alt="" loading="lazy" onerror="${fallback}"><img class="hero-img-mobile" src="assets/img/${mobile}" alt="" loading="lazy" onerror="${fallback}"></figure>`;
+
+  return `
+    <figure class="ph ph--hero">
+
+      <img
+        class="hero-img-desktop"
+        src="assets/img/${desktop}"
+        alt=""
+        loading="eager"
+        decoding="async"
+        fetchpriority="high"
+        onerror="
+          this.onerror=null;
+          this.src='assets/img/${mobile}';
+        "
+      >
+
+      <img
+        class="hero-img-mobile"
+        src="assets/img/${mobile}"
+        alt=""
+        loading="eager"
+        decoding="async"
+        fetchpriority="high"
+        onerror="
+          this.onerror=null;
+          this.src='assets/img/${desktop}';
+        "
+      >
+
+    </figure>
+  `;
 };
 
 window.Store = (()=>{
